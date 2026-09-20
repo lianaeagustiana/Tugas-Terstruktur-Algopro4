@@ -1,0 +1,77 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMQEIf5ab+cdw0tAPdyeR+/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/lianaeagustiana/Tugas-Terstruktur-Algopro4/blob/main/Tugas-Terstuktur%204%20Algopro\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "__km9Mg47le2",
+        "outputId": "266dec6b-5914-40d8-fb04-2bb43a88ada2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Reinitialized existing Git repository in /content/.git/\n",
+            "[fitur-laporan (root-commit) 85e4522] tambah fungsi cetak laporan\n",
+            " 1 file changed, 2 insertions(+)\n",
+            " create mode 100644 main.py\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "Switched to a new branch 'fitur-laporan'\n"
+          ]
+        }
+      ],
+      "source": [
+        "%%bash\n",
+        "git init\n",
+        "\n",
+        "# Create a dummy main.py file\n",
+        "echo \"def report_function():\" > main.py\n",
+        "echo \"    print('Generating report')\" >> main.py\n",
+        "\n",
+        "# Configure user identity for Git commit\n",
+        "git config user.email \"you@example.com\"\n",
+        "git config user.name \"Your Name\"\n",
+        "\n",
+        "git checkout -b fitur-laporan\n",
+        "git add main.py\n",
+        "git commit -m \"tambah fungsi cetak laporan\"\n",
+        "# git push origin fitur-laporan # Commented out as 'origin' remote is not configured"
+      ]
+    }
+  ]
+}
