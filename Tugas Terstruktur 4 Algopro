@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM6EPrf0Ak9bGXMX2OnfIGy",
+      "authorship_tag": "ABX9TyMaxfDHzTKqpAcIzCGRlNgr",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,12 +28,33 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 3,
       "metadata": {
-        "id": "tEdNpIMk7ifz"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tEdNpIMk7ifz",
+        "outputId": "d8875788-c5fd-460d-ef64-9f7ca2daa1b1"
       },
-      "outputs": [],
-      "source": []
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "fatal: not a git repository (or any of the parent directories): .git\n",
+            "fatal: not a git repository (or any of the parent directories): .git\n",
+            "fatal: not a git repository (or any of the parent directories): .git\n",
+            "fatal: not a git repository (or any of the parent directories): .git\n"
+          ]
+        }
+      ],
+      "source": [
+        "!git checkout -b fitur-input\n",
+        "# Edit main.py (tambahkan fungsi input)\n",
+        "!git add main.py\n",
+        "!git commit -m \"tambah fungsi input data panen\"\n",
+        "!git push origin fitur-input"
+      ]
     }
   ]
 }
